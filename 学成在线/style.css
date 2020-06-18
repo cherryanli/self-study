@@ -154,10 +154,6 @@ a{
     background-color: #ffffff;
     margin-top: 10px;
 }
-.goods ul {
-    width: 1150px;
-    margin: 0px auto;
-}
 .goods ul li a{
     float: left;
     width: 100px;
@@ -180,4 +176,121 @@ a{
    border-left: none;
    font-size: 14px;
    color: #00a4ff;
+}
+/* 盒子 */
+.box{
+    height: 615px;
+    margin-top: 10px;
+}
+.box .box-hd{
+    height: 60px;
+}
+.box .box-hd h3{
+    float: left;
+    line-height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #494949;
+}
+.box .box-hd a{
+    float: right;
+    line-height: 60px;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-right: 30px;
+}
+.box .box-bd ul {
+    width: 1300px;
+}
+.box .box-bd ul li {
+    position: relative;
+    float: left;
+    height: 270px;
+    width: 230px;
+    margin-bottom: 15px;
+    margin-right:12px ;
+    background-color:#ffffff
+}
+.box .box-bd ul li em{
+    position: absolute;
+    top: 10px;
+    right: -6px;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    font-style: normal;
+    border: 1px solid rebeccapurple;
+    text-align: center;
+    line-height: 30px;
+    color: lightcoral;
+}
+.box .box-bd ul li img{
+    width: 100%;
+}
+.box .box-bd  li h4{
+   font-size: 14px;
+   margin:15px 30px ;
+}
+.box .box-bd  li span{
+    display: inline;
+    font-size: 12px;
+    color: #ff7c2d;
+    margin-left: 30px;
+    
+}
+.box .box-bd  li h6{
+    display: inline;
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+}
+/* footer */
+.footer{
+    height: 415px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+.footer ul{
+    height: 185px;
+}
+.footer ul .footer-left{
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 240px;
+}
+.footer ul .footer-left p{
+    margin: 15px 0px 10px 0px;
+    font-size: 12px;
+    color: #666666;
+}
+.footer ul .footer-left a{
+    display: block;
+    width: 117px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+}
+.footer ul .footer-right{
+    float: right;
+}
+.footer ul .footer-right dl{
+    float: left;
+    margin-top: 15px;
+    margin-left: 145px;
+}
+.footer ul .footer-right dl:last-child{
+    margin-right: 30px;
+}
+.footer ul .footer-right dt{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.footer ul .footer-right dd{
+    font-size: 14px;
+    color: #333333;
 }
