@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f5f7;
+}
+/* header */
+.w{
+    width: 1200px;
+    margin: auto;
+}
+.header{
+    height: 42px;
+    margin: 35px auto;
+}
+.header .logo img{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+li{
+    list-style: none;
+}
+.header li{
+    float: left;
+}
+.header .nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 42px;
+    margin-left: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+.header .nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+.header .search{
+    margin-left: 90px;
+}
+.header  .search input[type=text]{
+    border: 1px solid #00a4ff;
+    border-right: none;
+    width: 345px;
+    height: 40px; 
+    padding-left: 15px;
+    font-size: 14px;
+    color: #cececf;
+}
+.header .search button{
+    width: 50px;
+    height: 42px; 
+    background: url(image/fa-search.png);
+    border: none;
+}
+.header .user img{
+    margin-left: 30px;
+    padding-top: 6px;
+}
+.header .user li:nth-child(2){
+    margin-left: 10px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #666666;
+}
+/* banner */
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner-img{
+    height: 420px;
+    background: url(image/banner.png);
+}
+/* 版心 */
+.banner .banner-left{
+    float: left;
+    width: 190px;
+    height: 420px;
+    background:rgba(0,0,0,0.2);
+}
+li{
+    list-style: none;
+}
+.banner .banner-left ul li{
+height: 43px;
+margin:0px  20px;
+}
+.banner .banner-left ul li:first-child{
+    padding-top: 28px;
+}
+.banner .banner-left ul li a{
+    display: inline-block;
+    height: 43px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #e9e9ec;
+}
+.banner .banner-left ul li a:hover{
+    color: royalblue;
+}
+.banner .banner-left ul li a span{
+    float: right;
+}
+/* 课程 */
+.banner .banner-right{
+    float: right;
+    width: 230px;
+    height: 312px;
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+.banner .banner-right dt{
+    height: 50px;
+    background-color:#9bceea ;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+.banner .banner-right dd{
+    border-bottom: 1px solid #efefef;
+}
+.banner .banner-right p:nth-child(1){
+    margin: 15px 0px 0px 20px;
+}
+.banner .banner-right p:nth-child(2){
+    margin-left: 20px;
+    font-size: 14px;
+    color: #c9c9c9;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+.banner .banner-right dd a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border:2px solid #22b0ff;
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: center;
+    color: blueviolet;
+}
+/* 精品介绍 */
+.goods{
+    height: 72px;
+    box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid #f0f2f4;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+.goods ul {
+    width: 1150px;
+    margin: 0px auto;
+}
+.goods ul li a{
+    float: left;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+    text-align: center;
+    border-left: 1px solid #bfbfbf;
+    color: #050505;
+}
+.goods ul li:first-child a{
+    border-left: none;
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+.goods ul li:last-child a{
+    display: block;
+   float: right;
+   border-left: none;
+   font-size: 14px;
+   color: #00a4ff;
+}

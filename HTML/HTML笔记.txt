@@ -1,0 +1,28 @@
+三大标准：结构、表现、行为
+粗体：<strong></strong>  <b></b>
+斜体：<em></em> <i></i>
+下划线：<ins></ins> <u></u>
+删除线:<del></del> <s></s>
+目录文件夹：普通文件夹，存放网页所需要的材料。
+根目录：打开目录文件夹的第一层。
+相对路径：同一级路径  图片文件位于HTML文件同一级<img src="baidu.jpg" />
+	     下一级路径 /  图片文件位于HTML文件下一级<img src="images/baidu.jpg" />
+	     上一级路径  ../ 图片文件位于HTML文件上一级 <img src="../baidu.jpg" />
+绝对路径：目录下的绝对位置，通常是从盘符开始的文件
+锚点： <a href="#live">个人生活</a>
+	   <h4 id="live">个人生活</h4>
+注释： ctrl+/ <!-- -->
+表格标签：cellpadding 单元边缘与内容之间的空白
+	     cellspacing 单元格之间的空白
+	     <thead>表格的头部区域
+	     <tbody>表格的主体区域
+	     rowspan 跨行合并 最上侧单元格为合并单元格
+	     colspan 跨列合并 最左侧单元格为合并单元格
+列表：无序列表：<ul><li></li></ul> ul只能放li标签 li标签可以放其他标签
+	  有序列表：<ol><li></li></ol> ol只能放li标签 li标签可以放其他标签
+	  自定义列表：<dl><dt></dt><dd></dd></dl> dl只能放dt和dd标签
+表单: radio 单选框 name对的名字都要相同 才可以实现多选一  
+	  checkbox 复选框  复选框name对的名字都要相同 才可以实现多选一  
+	  maxlength 规定输入字段中的字符的最大长度
+	  lable 点击lable标签内的文本时，会选择对应的表单元素上 <input type="radio" name="sex" checked="checked" id="sex"><label for="sex">男
+			

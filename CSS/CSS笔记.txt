@@ -1,0 +1,110 @@
+命名规范：
+        头：header
+        内容：content
+        尾：footer
+        导航：nav
+        侧栏：sidebar
+        栏目：column
+        登录条：loginbar
+        标志：logo
+        广告：banner
+        页面主体：main
+        热点：hot
+        新闻：news
+        下载：download
+        子导航：subnav
+        整体布局宽度：wrapp
+        菜单：menu
+        子菜单：submenu
+class选择器:可以调用多次
+id选择器：只能调用一次  唯一的
+*通配符选择器：选取所有的元素 不需要调用
+字体属性：font-family 字体样式
+         font-size 字体大小
+         font-weight 字体粗细(normal(400),bold(700),lighter) font-weight:700 后面不需要加单位
+         font-style 文字样式(normal,italic(斜体))
+         简写：font:font-style  font-weight font-size/line-height font-family(顺序不能颠倒  font-size font-family不能省略 其他可省)
+文本属性：color 文本颜色
+         text-align 水平对齐文本
+         text-decoration 装饰文本(none,underline,overline,line-through)
+         text-indent 文本缩进  单位用em更好
+         line-height 行间距
+引入外部css  <link rel="stylesheet" href="文件路径" />
+想要图片居中对齐，则让它的父亲元素(p、div等)添加居中对齐的代码 
+Emmet语法(html)：       1、div之后tab键 <div></div>
+                        2、div*3     生成 3个div
+                        3、ul>li     生成<ul><li></li></ul>  表示父子级关系
+                          ul>li*3   生成<ul><li></li><li></li></ul>
+                        4、div+p     生成<div></div><p></p> 表示兄弟关系
+                        5、.demo     生成<div class="demo></div> 生成带有类名或者id前面不加标签就默认div
+                           p#demo   生成<p id="demo"></p>
+                        6、p.demo$   生成<p class="demo$"></p> 类名是有序的
+                           p.demo$*3 生成 <p class="demo1"></p> <p class="demo2"></p>
+                        7、div{你好}  生成<div>你好</div>  在标签内部写内容
+Emmet语法(css): w10再按tab 生成width：10px
+Emmet语法(格式): shift+alt+F
+后代选择器:  1、父级 后代{样式声明}
+               ul li{样式声明} 选择ul里面所有的li标签元素
+子选择器:    1、父级>子级{样式说明}
+                div>p{样式声明} 选择div里面所有最近一级p标签元素(父级下所有亲子级)
+并集选择器:  1、元素1,元素2{样式说明}
+                div,p{样式说明}  选择div和p标签元素(喜欢竖着写，最后一个选择器不需要逗号)
+伪类选择器:   1、a:link      所有未被访问的链接
+                a:visited    所有已被访问的链接
+                a:hover     鼠标指针位于其上的链接
+                a:active     活动链接(鼠标按下未弹起)
+              2、:focus  获取焦点的表单元素
+                 input:focus   input获取光标
+块元素：        1、独占一行
+                2、高度、宽度、外边距、及内边距
+                3、宽度是父级的宽度
+                4、是一个容器及盒子，可以放块或行内元素
+                *文字类元素不能放块元素
+                块元素可用display:inline转化为行内元素 不能改变高度、宽度
+行内元素:       1、一行可以显示多个
+                2、高度、宽度设置无效
+                3、默认宽度是它本身内容的宽度
+                4、只能容纳文本或其他行内元素
+                *链接不能放链接 a里可以放块元素
+                行内元素可用display:block转化为块元素 改变高度、宽度
+行内块元素:      1、可以设置高度、宽度
+背景:            1、background-color       背景颜色
+                 2、background-image       背景图片
+                 3、background-repeat      背景平铺
+                 4、background-position    背景图片位置(方位，精确，混合)
+                 5、background-attachment  背景滚动(scroll,fixed)
+                 6、background: rgb(0,0,0,0.3) 背景颜色半透明
+                 简写:background 没有顺序要求
+三大特性:         1、层叠性
+                 2、继承性
+                 3、优先级(！importment > 行内 > id > class >元素 > 继承)
+盒子模型:         1、border:    边框    border: 1px solid red
+                  2、border-collapse  合并相邻边框
+                  3、padding  内边距  文字与盒子边缘的距离
+                  4、margin   外边距  盒子边缘与盒子边缘间的距离
+                  5、margin: 0 auto    必须指定宽度
+嵌套块元素垂直外边距塌陷问题：         1、为父元素定义上边框，边框颜色可为透明的颜色
+                                     2、为父元素定义上边距
+                                     3、为父元素添加overflow：hidden
+清除内外边距：      *{margin:0px;padding:0px;}
+圆角边框:            border-radius  (圆形设为宽度的一半 ，圆角矩形设为高度的一半)
+盒子阴影:            box-shadow     (h-shadow必写 v-shadow必写 blur模糊距离 spread阴影尺寸 color 默认outset且不能写出来)
+文字阴影:            text-shadow     (h-shadow必写 v-shadow必写 blur模糊距离  color)
+浮动:                1、float
+                     2、行内元素加了浮动具有行内块元素的相似特性
+                     3、块盒子没有设置高度，默认宽度和父级一样宽，添加浮动后，根据内容的大小来决定
+                     4、浮动的盒子只会影响浮动盒子后面的标准流不会影响前面的标准流
+清除浮动：            1、额外标签法   在最后添加一个块级元素并clear:(left、right、both)   不建议使用
+                     2、父级添加overflow(hidden、auto、scroll)
+                     3、给父元素加伪元素 clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}  。clearfix{*zoom:1}
+                     4、给父元素添加双为元素   前后都加 clearfix:after，clearfix:before{content:"";display:table;}  .clearfix:after{clear:both;}  .clearfix{*zoom:1}
+css属性书写顺序       定位布局 display  position  float     vivibility   overflow
+                     自身 width  height  margin  padding  border  backgorond
+                     文本  
+                     其他(CSS3)  content cursor 
+实际开发中 导航栏是用包含链接(li+a)的做法
+浮动的盒子不会有外边距合并的问题
+
+
+
+
