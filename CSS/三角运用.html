@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+    div {
+      width: 300px;
+      height: 30px;
+     border: 1px solid red;
+     line-height: 30px;
+     text-align: center;
+     margin: 0 auto;
+    }
+   
+    div .price-left{
+        position: relative;
+        width: 170px;
+        height: 100%;
+        float: left;
+        color: white;
+        font-weight: 700;
+        background-color: red;
+        margin-left: -1px;
+    }
+    .price-left i{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 0px;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    border-width: 30px 10px 0 0;
+    }
+  </style>
+  <body>
+    <div>
+      <span class="price-left" >
+        $1650.00
+        <i></i>
+      </span>
+      <span >$5088.00</span>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+/* 列表页专有的css */
+.header .logo .sk {
+  position: absolute;
+  left: 185px;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 1px solid #b1191a;
+  padding-left: 15px;
+}
+.nav .sk_list {
+  float: left;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+.nav .sk_list ul li a {
+  width: 130px;
+  font: 16px "微软雅黑";
+  font-weight: 700;
+}
+.nav .sk_con {
+  float: left;
+}
+.nav .sk_con ul li:last-child a::after {
+  content: "\e91e";
+  font-family: "icomoon";
+}
+.sk .sk_bd ul li{
+    width: 290px;
+    height: 460px;
+
+}
+345

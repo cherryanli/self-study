@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 112px;
+        background-color: pink;
+    }
+    div{
+        float: left;
+        width:100px;
+        height: 112px;
+        background-color: rebeccapurple;
+    }
+    div:nth-child(1){
+        background: url(abcd.jpg) no-repeat -493px -276px;
+    }
+    div:nth-child(2){
+        background: url(abcd.jpg) no-repeat -215px -141px;
+    }
+    div:nth-child(3){
+        background: url(abcd.jpg) no-repeat -495px -142px;
+    }
+</style>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "id": "1894684",
+  "name": "weather",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15432397",
+      "name": "彩虹",
+      "font_class": "caihong",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "15432399",
+      "name": "云-风",
+      "font_class": "yun-feng",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "15432400",
+      "name": "太阳-月亮-日食",
+      "font_class": "taiyang-yueliang-rishi",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "15432401",
+      "name": "日食",
+      "font_class": "rishi",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "15432408",
+      "name": "干燥",
+      "font_class": "ganzao",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "15432409",
+      "name": "伞-房子",
+      "font_class": "san-fangzi",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "15432410",
+      "name": "伞",
+      "font_class": "san",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "15432417",
+      "name": "火灾",
+      "font_class": "huozai",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "15432428",
+      "name": "伞_文件",
+      "font_class": "san_wenjian",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "15432437",
+      "name": "月亮",
+      "font_class": "yueliang",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    }
+  ]
+}

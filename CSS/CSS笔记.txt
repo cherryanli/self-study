@@ -13,7 +13,7 @@
         新闻：news
         下载：download
         子导航：subnav
-        整体布局宽度：wrapp
+        整体布局宽度：wrap
         菜单：menu
         子菜单：submenu
 class选择器:可以调用多次
@@ -96,7 +96,7 @@ Emmet语法(格式): shift+alt+F
                      4、浮动的盒子只会影响浮动盒子后面的标准流不会影响前面的标准流
 清除浮动：            1、额外标签法   在最后添加一个块级元素并clear:(left、right、both)   不建议使用
                      2、父级添加overflow(hidden、auto、scroll)
-                     3、给父元素加伪元素 clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}  。clearfix{*zoom:1}
+                     3、给父元素加伪元素 .clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}  .clearfix{*zoom:1}
                      4、给父元素添加双为元素   前后都加 clearfix:after，clearfix:before{content:"";display:table;}  .clearfix:after{clear:both;}  .clearfix{*zoom:1}
 css属性书写顺序       定位布局 display  position  float     vivibility   overflow
                      自身 width  height  margin  padding  border  backgorond
@@ -119,10 +119,47 @@ css定位              定位=定位模式+边偏移
                      叠放次序(z-index)     1、数值越大，盒子越靠上
                                           2、只有定位的盒子才有z-index属性，数字后面不能加单位
                      绝对定位的盒子水平垂直居中   1、先移动到父元素的水平中心的一半，再margin盒子的一半
-                     
-   245                  
+元素的显示与隐藏      1、display：none 隐藏对象，不再占有原来的位置          
+                     2、visibility：(hidden,visible)隐藏元素，继续占有原来的位置。
+                     3、overflow（hidde隐藏n、visible显示,scroll总是显示滚动条,auto溢出显示滚动条，不溢出不显示)
+精灵技术:            借用background-position来实现  x轴右走是正值，左走是负值
+字体图标：           网站 iconfont 、icomoon
+三角制作：           不要高宽，只要边框却透明颜色，要哪个为方向的三角形就改那个方位的边框颜色
+用户界面样式:        1、cursor(pointer\text\not-allowed\move)
+                     2、表单轮廓outline：none
+                     3、文本域：resize：none
+行内或行内块文字垂直居中、vertical-align(middle、baseline、top、)  也可以解决图片底部默认空白缝隙问题
+单行文本溢出显示省略号    white-space:nowrap  overflow:hidden text-overflow:ellipsis
+常见布局技巧：          1、文字围绕浮动元素  用Float文字会自动浮在图片旁边
+                        2、行内块  
+                        3.三角运用  只需要将高度改大 还要运用到定位
 
-
-
-
+CSS3：新增
+多媒体标签         视频：<video src="文件地址"   controls="controls"></video>   autoplay自动播放  谷歌浏览器需要muted 静音播放   controls播放插件 width和hight  loop循环播放  poster加载等待的画面图片
+                  音频：<audio src="文件地址"   controls="controls"></audio>   autoplay自动播放  谷歌浏览器需要muted 静音播放   controls播放插件  loop循环播放
+表单属性：           required='required'  内容必填 不能为空
+                     placeholder="文本"      提示信息
+                     autofocus(autofocus)          自动焦点
+                     autocomplete(off/on)         是否自动记住以前输入的文字
+                     multiple                   选择多个文件上传
+新增选择器        属性选择器        1、E[att] 选择具有att属性的E元素  如input[value]
+                                   2、E[att="val"] 选择具有att属性且属性值等于val的E元素 如input[type='text']
+                                   3、E[att^="val"]  匹配具有att属性且值att开头的E元素   如div[class^=icon]
+                                   4、E[att$="val"]  匹配具有att属性且值att结尾的E元素    如div[class$=date]
+                                   5、E[att*="val"]  匹配具有att属性且值中含有val的E元素   
+                  伪类选择器      E：first-child      匹配父元素中的第一个子元素
+                                 E:last-child         匹配父元素中的最后一个子元素
+                                 E:nth-child(n)       匹配父元素中的第n个子元素
+                                 E:first-of-type      指定类型E的第一个
+                                 E:last-of-type       指定类型E的最后一个
+                                 E:nth-of-type(n)     指定类型的第n个
+                  伪元素选择器    ::before            在元素内部的前面插入内容
+                                 ::after             在元素内部的后面插入内容   
+                                 必须具有content属性(一定不能掉了content属性！！)
+伪元素字体图标       利用after和before还有定位                               
+盒子模型:            box-sizing(content-box默认、border-box设置后不会撑开)
+图片变模糊：         filter：blur模糊处理
+计算calc            固定盒子间的大小
+动画过度             transition(要过度的属性 花费时间 运动曲线(默认ease) 何时开始(默认0s))  若想改变多个在第一个后面逗号再接着写第二个   谁做过度给加
+300
 
